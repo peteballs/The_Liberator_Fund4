@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!-- Custom -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>The Liberator Fund</title>
+</head>
+
+<body>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">Manage Your Investment Account</h1>
+          <p class="lead"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> Investment Results</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="dashboard" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Welcome {{ user.username }}</h2>
+          <p>Here are the investment results that you have inquired about</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Investment Strategy</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Mean Reversion</td>
+                <td>
+                  <a class="btn btn-light" href="#">View result</a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Velocity Investment Model</td>
+                <td>
+                  <a class="btn btn-light" href="#">View result</a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Market Adaptive Model</td>
+                <td>
+                  <a class="btn btn-light" href="#">View result</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="assets/js/jquery-3.3.1.min.js "></script>
+  <script src="assets/js/bootstrap.bundle.min.js "></script>
+  <script src="assets/js/main.js "></script>
+</body>
+
+</html>
+{% endblock %}

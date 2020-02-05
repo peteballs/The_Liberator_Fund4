@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+ 
+
+<!-- results -->
+<section id="showcase" class="py-5">
+   <div class="container p-3 my-3 bg-primary text-white">
+    <h1 class="text-center mb-2 text-white">Automated Investment Strategies</h1>
+    <div class="row">
+      <!-- result 1 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card result-preview">
+          <img class="card-img-top" src="{% static 'img/mean_reversion.jpg' %}" alt="">
+          <div class="card-img-overlay">
+            <h2>
+              <span class="badge badge-secondary text-white">45% Avg.</span>
+            </h2>
+          </div>
+          <div class="card-body">
+            <div class="result-heading text-center">
+              <h4 class="text-primary">Mean Reversion Model</h4>
+              <p>
+            </div>
+            <hr>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                 Correlation Algo</div>
+              <div class="col-6 cursive_text">
+                 Diversification Algo</div>
+            </div>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                Contarian Algo</div>
+              <div class="col-6">
+                Probability Algo</div>
+            </div>
+            <hr>
+            <a href="result.html" class="btn btn-primary btn-block">Run Strategy Simulation</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- result 2 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card result-preview">
+          <img class="card-img-top" src="{% static 'img/elliot_wave.jpg' %}" alt="">
+          <div class="card-img-overlay">
+            <h2>
+              <span class="badge badge-secondary text-white">50% Avg.</span>
+            </h2>
+          </div>
+          <div class="card-body">
+            <div class="result-heading text-center">
+              <h4 class="text-primary">Market Adaptive Model</h4>
+              <p>
+            </div>
+            <hr>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                Adjusted Algo</div>
+              <div class="col-6">
+                Probability Algo</div>
+            </div>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                Correlation Algo</div>
+              <div class="col-6">
+                Diversification Algo</div>
+            </div>
+            <hr>
+            <a href="result.html" class="btn btn-primary btn-block">Run Strategy Simulation</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- result 3 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card result-preview">
+          <img class="card-img-top" src="{% static 'img/vim_vs_buy_hold.png' %}" alt="">
+          <div class="card-img-overlay">
+            <h2>
+              <span class="badge badge-secondary text-white">40% Avg.</span>
+            </h2>
+          </div>
+          <div class="card-body">
+            <div class="result-heading text-center">
+              <h4 class="text-primary">Velocity Investment Model</h4>
+            </div>
+            <hr>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+               Sizing Algo</div>
+              <div class="col-6">
+               Probability Algo</div>
+            </div>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+               Diversity Algo</div>
+              <div class="col-6">
+                Trend Algo</div>
+            </div>
+            <hr>
+            <a href="result.html" class="btn btn-primary btn-block">Run Strategy Simulation</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="services" class="py-5 bg-secondary text-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <hr>
+        <h3>Investment Advisory Services</h3>
+        <p>Our investment advisory services are based on identifying specific opportunities that can be exploited in upcoming trends.</p>
+      </div>
+      <div class="col-md-4">
+        <hr>
+        <h3>Automated Investment Management</h3>
+        <p>Our primary focus of our organization is to offer higher returns by balancing position sizing with historical probability and correlation.</p>
+      </div>
+      <div class="col-md-4">
+        <hr>
+        <h3>Discretionary Investment Advisory</h3>
+        <p>Our discretionary models promote above average returns by exploiting historical correlation in the most advantageous markets. </p>
+      </div>
+    </div>
+  </div>
+</section> 
+{% endblock %}

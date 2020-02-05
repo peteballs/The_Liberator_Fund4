@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Showcase -->
+<section id="showcase">
+    <div class="container text-center">
+      <div class="home-search p-5">
+        <div class="overlay p-5">
+          <h1 class="display-4 mb-4">
+            Projected Automated Investments Results
+          </h1>
+          <p class="lead">The following feature allows you to determine the historical results that would have been achieved by employing our investment models. It is important to recognize that actual results may vary as the past may not accurately predict future results.</p>
+          <div class="search">
+            <form action="search.html">
+              <!-- Form Row 1 -->
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Investment Model</label>
+                  <select name="state" class="form-control">
+                    <option selected="true" disabled="disabled">Investment Model</option>
+                    <option value="1">Velocity Investment Model</option>
+                    <option value="2">Mean Reversion Model</option>
+                    <option value="3">Market Adaptive Model</option>
+                   </select>
+                </div>
+              
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Risk Level</label>
+                  <select name="state" class="form-control">
+                    <option selected="true" disabled="disabled">Risk Level</option>
+                    <option value="1">Low</option>
+                    <option value="2">Moderate</option>
+                    <option value="3">High</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Investment Timeline</label>
+                  <select name="state" class="form-control">
+                    <option selected="true" disabled="disabled">Investment Timeline</option>
+                    <option value="1">1 Month</option>
+                    <option value="2">2 Months</option>
+                    <option value="3">3 Months</option>
+                    <option value="4">4 Months</option>
+                    <option value="5">5 Months</option>
+                    <option value="6">6 Months</option>
+                    <option value="7">7 Months</option>
+                    <option value="8">8 Months</option>
+                    <option value="9">9 Months</option>
+                    <option value="10">10 Months</option>                      
+                    <option value="11">11 Months</option>
+                    <option value="12">12 Months</option>
+                    <option value="13">13 Months</option>
+                    <option value="14">14 Months</option>
+                    <option value="15">15 Months</option>
+                    <option value="16">16 Months</option>
+                    <option value="17">17 Months</option>
+                    <option value="18">18 Months</option>
+                    <option value="19">19 Months</option>
+                    <option value="20">20 Months</option>
+                    <option value="21">21 Months</option>
+                    <option value="22">22 Months</option>
+                    <option value="23">23 Months</option>
+                    <option value="24">24 Months</option>
+                    <option value="25">25 Months</option>
+                    <option value="26">26 Months</option>
+                    <option value="27">27 Months</option>
+                    <option value="28">28 Months</option>
+                    <option value="29">29 Months</option>
+                    <option value="30">30 Months</option>
+                    <option value="31">31 Months</option>
+                    <option value="32">32 Months</option>
+                    <option value="33">33 Months</option>
+                    <option value="34">34 Months</option>
+                    <option value="35">35 Months</option>
+                    <option value="36">36 Months</option>
+                    <option value="37">37 Months</option>
+                    <option value="38">38 Months</option>
+                    <option value="39">39 Months</option>
+                    <option value="40">40 Months</option>
+                    <option value="41">41 Months</option>
+                    <option value="42">42 Months</option> 
+                    <option value="43">43 Months</option>
+                    <option value="44">44 Months</option>
+                    <option value="45">45 Months</option>
+                    <option value="46">46 Months</option>
+                    <option value="47">47 Months</option>
+                    <option value="48">48 Months</option>
+                    <option value="49">49 Months</option>
+                    <option value="50">50 Months</option>
+                    <option value="51">51 Months</option>
+                    <option value="52">52 Months</option>
+                    <option value="53">53 Months</option>
+                    <option value="54">54 Months</option>
+                    <option value="55">55 Months</option>
+                    <option value="56">56 Months</option>
+                    <option value="57">57 Months</option>
+                    <option value="58">58 Months</option>
+                    <option value="59">59 Months</option>
+                    <option value="60">60 Months</option>
+                    </select>
+                </div>
+              </div>
+              <!-- Form Row 2 -->
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label class="sr-only">Starting Year</label>
+                <select name="year" class="form-control" id="type">
+                    <option selected="true" disabled="disabled">Starting Year</option>
+                    <option value="1">2000</option>
+                    <option value="2">2001</option>
+                    <option value="3">2002</option>
+                    <option value="4">2003</option>
+                    <option value="5">2004</option>
+                    <option value="6">2005</option>
+                    <option value="7">2006</option>
+                    <option value="8">2007</option>
+                    <option value="9">2008</option>
+                    <option value="10">2009</option>
+                    <option value="11">2010</option>
+                    <option value="12">2011</option>
+                    <option value="13">2012</option>
+                    <option value="14">2013</option>
+                    <option value="15">2014</option>
+                    <option value="16">2015</option>
+                    <option value="17">2016</option>
+                    <option value="18">2017</option>
+                    <option value="19">2018</option>
+                    <option value="20">2019</option>
+                  </select>
+                </div>
+            
+                <div class="col-md-6 mb-3">
+                  <select name="price" class="form-control" id="type">
+                  <label class="sr-only">Investment Amount</label>
+                    <option selected="true" disabled="disabled">Investment Amount</option>
+                    <option value="100000">$100,000</option>
+                    <option value="200000">$200,000</option>
+                    <option value="300000">$300,000</option>
+                    <option value="400000">$400,000</option>
+                    <option value="500000">$500,000</option>
+                    <option value="600000">$600,000</option>
+                    <option value="700000">$700,000</option>
+                    <option value="800000">$800,000</option>
+                    <option value="900000">$900,000</option>
+                    <option value="1000000">$1M+</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+            </form>
+          </div>
+       </section>
+
+{% endblock %}
